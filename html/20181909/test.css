@@ -1,0 +1,91 @@
+.div1 {
+    background-color:chartreuse;
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.div2 {
+    background-color:snow;
+    height: 200px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.div3 {
+    background-color:lightgoldenrodyellow;
+    height: 200px;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+}
+.div4 {
+    background-color:lavender;
+    height: 90px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.div1a{
+    background-color: blue;width:60%;
+    height:50%;
+    margin:10px;
+}
+.div1b{
+    background-color: blueviolet;width:40%;
+    height:50%;
+    margin:10px;
+}
+.div2a{
+    justify-content: center;
+    align-items: center;
+     width: 50%; 
+     margin:20px;
+     height:80%;
+}
+.div2aa{
+    background-color:tomato;width:100%;
+    margin:10px;
+    height:40%;
+    margin-bottom: 15px;
+}
+.div2ab{
+    background-color: red;width:100%;
+    margin:10px;
+    height:40%;
+    margin-top:15px;
+}
+.div2b{
+    background-color:hotpink; width: 15%;
+    margin: 20px;
+    height: 80%;
+}
+.div2c{
+    background-color: pink;width:15%; margin:20px; height:80%;
+}
+.div3a{
+    background-color: orangered;width:24%;margin:20px;height:80%;
+}
+.div3b{
+    background-color: brown;width: 24%;margin:20px;height:80%;
+}
+.div3c{
+    background-color:chartreuse;width: 24%;margin:20px;height:80%;
+}
+.div3d{
+    background-color:crimson;width: 24%;margin:20px;height:80%;
+}
+.div4a{
+    background-color: yellow;
+    width:45%;
+    margin:20px;
+    height:50%;
+    
+}
+.div4b{
+    background-color: yellow;
+    width:45%;
+    margin:20px;
+    height:50%;
+    
+}
