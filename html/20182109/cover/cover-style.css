@@ -1,0 +1,9 @@
+.Header--Style{
+    height: 200px;
+}
+.Content--Style{
+    height:100px;
+    background-color:aliceblue;
+    justify-content: center;
+    display: flex;
+}
