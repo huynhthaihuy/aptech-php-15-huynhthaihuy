@@ -1,9 +1,32 @@
 .Header--Style{
-    height: 200px;
+    height: 20vh;
+    background-color: gray;
 }
 .Content--Style{
-    height:100px;
-    background-color:aliceblue;
+    height:20vh;
+    background-color:gray;
+    color:white;
     justify-content: center;
     display: flex;
+    justify-content: space-around;
+}
+.nav1{
+    margin-left: 20px;
+}
+.nav2{
+    margin-left: 20px;
+}
+.Body--Style{
+    height:200px;
+    background-color: gray;
+}
+.cover1{
+    color:white;
+}
+.cover2{
+    color:white;
+}
+.Footer--Style{
+    height:20vh;
+    background-color: gray;
 }
