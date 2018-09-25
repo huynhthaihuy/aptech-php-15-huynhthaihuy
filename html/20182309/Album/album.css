@@ -1,0 +1,34 @@
+.Header--Style{
+    height:50px;
+    background-color: black;
+}
+.Album{
+    height:50px;
+    color:white;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.Bar{
+    color: white;
+    height:50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.Body--Style{
+    height:200px;
+    background-color: white;
+}
+.Button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Main--Style{
+    height:1350px;
+}
+.Footer--Style{
+    height: 150px;
+    background-color: whitesmoke;
+}

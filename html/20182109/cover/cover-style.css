@@ -1,27 +1,37 @@
 .Body--Full{
-    background-color: gray;
+    background-color: black;
 }
 .Header--Style{
     height: 20vh;
-    background-color: gray;
+    background-color: black;
+}
+.a:hover{
+    border-bottom: 5px solid;
+    
 }
 .Content--Style{
-    height:20vh;
-    background-color:gray;
-    color:white;
+    height:10vh;
+    background-color:black;
     justify-content: center;
     display: flex;
     justify-content: space-around;
+    color:white;
+}
+.nav0{
+    color:white;
+    border-bottom: 5px solid;
 }
 .nav1{
+    color:white;
     margin-left: 20px;
 }
 .nav2{
+    color:white;
     margin-left: 20px;
 }
 .Body--Style{
-    height:400px;
-    background-color: gray;
+    height:300px;
+    background-color: black;
 }
 .cover1{
     color:white;
@@ -31,5 +41,6 @@
 }
 .Footer--Style{
     height:20vh;
-    background-color: gray;
+    background-color: black;
+    color:gray;
 }
