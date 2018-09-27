@@ -1,0 +1,39 @@
+.Header--Style{
+    height: 60px;
+    border-bottom: 1px solid;
+}
+.Header1--Style{
+    height:50px;
+}
+.Header2{
+    height:280px;
+    background-color:black;
+}
+.nav0{
+    color:white;
+}
+.nn{
+    color:blue;
+}
+.nn1{
+    color:green;
+}
+.Main{
+    height:3330px
+}
+.xx{
+    height:50px;
+    border-bottom: 1px solid;
+}
+.xx1{
+    height:90px;
+    border-bottom: 1px solid;
+}
+.xxx{
+    height:180px;
+    background-color: gray;
+}
+.Footer--Style{
+    height:180px;
+    border-top: 1px solid;
+}

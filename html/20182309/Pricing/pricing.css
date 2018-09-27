@@ -1,5 +1,5 @@
 .Header--Style{
-    height:50px;
+    height:60px;
     background-color: whitesmoke;
 }
 .Content--Style{
@@ -27,7 +27,7 @@
     margin-right: 20px;
 }
 .Pricing--Style{
-    height:230px;
+    height:200px;
     color:black;
 }
 .Body--Style{
