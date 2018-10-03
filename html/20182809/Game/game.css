@@ -1,0 +1,34 @@
+.Header--Style{
+    height:50px;
+    background-color: black;
+    color:white;
+}
+.Header1--Style{
+    height:350px;
+}
+.Body--Style{
+    height:2850px;
+    background-color: grey;
+}
+.Body1--Style{
+    height:200px;
+}
+.Body2--Style{
+    height:1300px;
+}
+.Body3--Style{
+    height: 1300px;
+}
+.BodyNext{
+    height: 750px;
+}
+.BodyNext1{
+    height:325px;
+}
+.Footer--Style{
+    height:700px;
+    background-color: gray;
+}
+.aa{
+    height:30px
+}

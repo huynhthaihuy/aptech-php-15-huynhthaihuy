@@ -1,0 +1,17 @@
+.Header--Style{
+    height:50px;
+    background-color: black;
+    color: white;
+}
+.Header1--Style{
+    height:500px;
+}
+.Body--Style{
+    height:800px;
+}
+.Body1--Style{
+    height:1700px;
+}
+.Footer--Style{
+    height:80px;
+}
