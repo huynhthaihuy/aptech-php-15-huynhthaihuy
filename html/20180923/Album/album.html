@@ -4,8 +4,17 @@
     <link rel="stylesheet" href="album.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     </head>
 <body>
+    <div id="js-div" class="Header3-Style container-fluid bg-danger d-none">
+        <div class="row">
+            <div class="col-1"></div>
+            <div class="col-5"></div>
+            <div class="col-5"></div>
+            <div class="col-1"></div>
+        </div>
+    </div>
     <div class="Header--Style container-fluid text-center">
         <div class="row">
             <div class="col-1"></div>
@@ -13,7 +22,9 @@
                 <i class="fas fa-camera fa-2x">   Album</i>
             </div>
             <div class="Bar col-5 justify-content-end">
-                <i class="fas fa-bars fa-2x"></i>
+                <button onclick="hideshow()"><i class="fas fa-bars fa-2x"></i></button>
+                <!-- Của toggle Jquery
+                    <button id="toggle" type="button"><i class="fas fa-bars fa-2x"></i></button>-->
             </div>
             <div class="col-1"></div>
         </div>
@@ -127,4 +138,5 @@
         </div>
     </div>
 </body>
+<script src="album2.js"></script>
 </html>
