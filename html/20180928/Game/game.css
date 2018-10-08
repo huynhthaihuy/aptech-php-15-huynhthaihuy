@@ -4,20 +4,20 @@
     color:white;
 }
 .Header1--Style{
-    height:350px;
+    height:800px;
 }
 .Body--Style{
-    height:2850px;
-    background-color: grey;
+    height:1200px;
+    background-color: whitesmoke;
 }
 .Body1--Style{
     height:200px;
 }
 .Body2--Style{
-    height:1300px;
+    height:450px;
 }
 .Body3--Style{
-    height: 1300px;
+    height: 500px;
 }
 .BodyNext{
     height: 750px;
@@ -26,9 +26,13 @@
     height:325px;
 }
 .Footer--Style{
-    height:700px;
+    height:350px;
     background-color: gray;
 }
 .aa{
-    height:30px
+    height:30px;
+}
+.aaa{
+    height:80px;
+    background-color: whitesmoke;
 }
