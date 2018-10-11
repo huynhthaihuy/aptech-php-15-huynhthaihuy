@@ -21,12 +21,12 @@
         var tBody = document.createElement("tbody");
         tBody.id = "tBody";
         Table.appendChild(tBody);
-        for (i in a.users) {//lấy dữ liệu của mảng users trong data.user Nó chỉ trả về từng object con của users
+        for (i in a.users) {
             var trBody = document.createElement('tr')
             tBody.appendChild(trBody);
-            for (n in a.users[i]) { //truy cập vào từng object của user
+            for (n in a.users[i]) {
                 var thBody = document.createElement('th');
-                thBody.className = "border border-dark";
+                thBody.className = "border border-danger";
                 trBody.appendChild(thBody);
                 var th_text = document.createTextNode(a.users[i][n]);
                 thBody.appendChild(th_text);

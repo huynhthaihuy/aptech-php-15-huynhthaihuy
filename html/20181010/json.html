@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+    <head>
+            <link rel="stylesheet" href="styles.css">
+            <link rel="stylesheet" href="json.css">
+    </head>
+<body>
+    <div id="js-div-table"></div>
+    <div id="js-div-card"></div>
+    <div id="js-div-data"></div>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<button id="div2">Get Post</button>
+<button type="button" id="div1">Change Content</button>
+<script>
+$(document).ready(function(){
+    $("#div1").click(function(){
+        $.get('data.json',function(reponse){
+            var table = '<table id="js-table" class="table"></table>';
+    $('#js-div-table').append(table);
+    var thead = '<thead id="js-thead" class="thead bg-success"></thead>';
+    $(thead).appendTo('#js-table');
+    var tr = '<tr id="js-tr-head"></tr>';
+    $(tr).appendTo('#js-thead');
+    var th = '<th>Id</th><th>Name</th><th>Email</th><th>Password</th><th>Created_at</th><th>Updated_at</th>';
+    $(th).appendTo('#js-tr-head');
+    var tbody = ' <tbody class="tbody bg-info"></tbody>';
+    $('#js-thead').after(tbody);
+    for (i = 0; i < reponse.users.length; i++) {
+      var trBody = '<tr id="trBody-' + reponse.users[i].id + '"></tr>';
+      $(trBody).appendTo('tbody');
+      var thBody = ' <th>' + (i + 8) + '</th>';
+      var tdBody = '<td>' + reponse.users[i].name + '</td><td>' + reponse.users[i].email + '</td><td>'+ reponse.users[i].password + '</td><td>'+ reponse.users[i].created_at + '</td><td>'+ reponse.users[i].updated_at + '</td> ';
+      $('#trBody-' + reponse.users[i].id).append(thBody, tdBody);
+    }
+        });
+    });
+});
+//$(document).ready(function(){
+    $(document).ready(function () {
+      $('#div2').click(function () {
+        $.get('http://101.0.86.110:6699/api/v1/posts?page=2', function (response) {
+          var data = response.data.posts.data;
+          console.log(data);
+        for (i = 0; i < data.length; i++) {
+            var cardd = '<div id="card-' + data[i].id +'" class ="Style card bg-info "></div>';
+            $(cardd).appendTo('#js-div-data');
+            var cardbd = '<div id="cardbd'  + data[i] +'" class="card-body"></div>';
+            $(cardbd).appendTo('#card-');
+            var h1 = '<p>' + data[i].tittle + '</p><p>'+ data[i].slug + '</p><p>'+ data[i].description + '</p><p>'+ data[i].content + '</p>';
+            $(h1).appendTo('#cardbd ' +data[i].id);
+            // var div = '<div id="js-div-' + data[i].id + '">';
+            // $(div).appendTo('#js-div-data');
+            // var h1 = '<p>' + data[i].tittle + '</p><p>'+ data[i].slug + '</p><p>'+ data[i].description + '</p><p>'+ data[i].content + '</p>'; ;
+            // $(h1).appendTo('#js-div-' + data[i].id);
+          }
+        });
+      });
+});
+    //$("#div2").click(function(){
+        //$.get('http://101.0.86.110:6699/api/v1/posts?page=2',function(reponse){
+           // var data = reponse.data.posts.data;
+            //console.log(data);
+            //var card = '<div id="js-card" class="card-group height:500px"></div>';
+    //$('#js-div-card').append(card);
+    //for (i = 0;i<=data.length;i++){
+        //var cardd = '<div id="card-' + data[i] +'" class ="card bg-info"></div>';
+        //$(cardd).appendTo('#js-card');
+        //var cardbd = '<div id="cardbd' + data[i] +'"></div>'
+        //$(cardbd).appendTo('#card-')
+        //var para = '<p>' + data[i].id + '</p><p>' + data[i].tittle + '</p><p>'+ data[i].slug + '</p><p>'+ data[i].description + '</p><p>'+ data[i].content + '</p>';
+        //$('cardbd').append(para);
+    //}
+    //var cardd = '<div id="js-cbody" class="card-body text-center"></div>';
+    //$(cardbody).appendTo('#js-card');
+    //var para = '<p>Id</p><p>Title</p><p>Slug</p><p>Description</p><p>Content</p>';
+    //$(para).appendTo('#js-cbody');
+    //for (i = 0; i < a.users.length; i++) {
+      //var trBody = '<tr id="trBody-' + a.users[i].id + '"></tr>';
+     // $(trBody).appendTo('tbody');
+      //var thBody = ' <th>' + (i + 8) + '</th>';
+    //var tdBody = '<td>' + a.users[i].name + '</td><td>' + a.users[i].email + '</td><td>'+ a.users[i].password + '</td><td>'+ a.users[i].created_at + '</td><td>'+ a.users[i].updated_at + '</td> ';
+     // $('#trBody-' + a.users[i].id).append(thBody, tdBody);
+//});
+//});
+//});
+</script>
+</body>
+</html>

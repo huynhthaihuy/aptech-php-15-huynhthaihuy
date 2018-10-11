@@ -1,4 +1,4 @@
-var table = '<table id="js-table" class="table"></table>';
+    var table = '<table id="js-table" class="table"></table>';
     $('#js-div-table').append(table);
     var thead = '<thead id="js-thead" class="thead bg-success"></thead>';
     $(thead).appendTo('#js-table');
