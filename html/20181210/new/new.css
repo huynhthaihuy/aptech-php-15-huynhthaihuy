@@ -1,13 +1,13 @@
 .Header{
-    height:70px;
-    border-bottom: 0.5px solid;
+    height:50px;
 }
 .aa{
     color:green;
 }
 .Body1--Style{
-    height:340px;
+    height:360px;
     border-bottom: 0.5px solid;
+    border-top: 0.5px solid;
 }
 .a{
     height:10px;
@@ -40,7 +40,6 @@
 }
 .Header2--Style{
     height:40px;
-    border-bottom: 0.5px solid;
 }
 .title{
     height:840px;
