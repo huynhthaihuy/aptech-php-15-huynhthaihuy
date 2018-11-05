@@ -18,6 +18,6 @@ class Controller extends BaseController
     {
         $users = DB::table('users')/*->where('Name','huy')*/->get();
 
-        return $users;
+        return view('huyhuynh', ['users' => $users]);
     }
 }
