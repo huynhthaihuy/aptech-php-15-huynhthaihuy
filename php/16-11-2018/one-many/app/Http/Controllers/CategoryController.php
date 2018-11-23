@@ -1,12 +1,11 @@
 <?php
 
 namespace App\Http\Controllers;
-use App\Post;
 use App\Category;
-
+use App\Post;
 use Illuminate\Http\Request;
 
-class UserController extends Controller
+class CategoryController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -18,8 +17,8 @@ class UserController extends Controller
         //lay ra 2 du lieu
         //$posts = Post::with('category')->take(2)->get();
         // $users = DB::table('users')->get();
-        $posts = Post::all();
-        return view('index', ['posts' => $posts]);
+        $categories = Category::all();
+        return view('categories.index', ['categories' => $categories]);
     }
 
     /**
@@ -30,7 +29,7 @@ class UserController extends Controller
     public function create()
     {
         //
-        return view('create');
+        return view('categories.create');
     }
 
     /**
@@ -48,14 +47,10 @@ class UserController extends Controller
         //     'password'=> $request->password
         // ]);
         // dd($request->ct_id);
-        $posts = new Post;
-        $posts = Post::with('category');
-        $posts->title = $request->title;
-        $posts->description = $request->description;
-        $posts->content = $request->description;
-        $posts->ct_id = $request->ct_id;
-        $posts->save();
-        return redirect()->route('users.index');
+        $categories = new Category;
+        $categories->name = $request->name;
+        $categories->save();
+        return redirect()->route('categories.index');
     }
 
     /**
@@ -66,10 +61,12 @@ class UserController extends Controller
      */
     public function show($id)
     {
-        $posts = Post::with('category')->find($id);
+        $categories = Category::with('post')->find($id);
         //  dd($users);
         // $users = DB::table('users')->where('id', $id)->get();
-        return view('show', ['post' => $posts]);
+        // dd($categories);
+        return view('categories.show', ['category' => $categories 
+        ]);
     }
 
     /**
@@ -80,8 +77,8 @@ class UserController extends Controller
      */
     public function edit($id)
     {
-        $posts = Post::with('category')->find($id);
-        return view('edit', ['post' => $posts]);
+        $categories= Category::with('post')->find($id);
+        return view('categories.edit', ['category' => $categories]);
     }
 
     /**
@@ -95,12 +92,10 @@ class UserController extends Controller
     {
         //
         // dd($request->all());
-        $post = Post::find($id);
-        $post->title = $request->title;
-        $post->description = $request->description;
-        $post->content = $request->content;
-        $post->save();
-        return redirect()->route('users.index');
+        $category = Category::find($id);
+        $category->name = $request->name;
+        $category->save();
+        return redirect()->route('categories.index');
     }
 
     /**
@@ -111,8 +106,8 @@ class UserController extends Controller
      */
     public function destroy($id)
     {
-        $posts = Post::with('category')->find($id)->delete();
+        $categories = Category::with('post')->find($id)->delete();
         // dd($user);
-        return redirect()->route('users.index');
+        return redirect()->route('categories.index');
     }
 }
