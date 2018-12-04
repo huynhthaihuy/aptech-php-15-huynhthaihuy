@@ -17,7 +17,7 @@ class PostsTableSeeder extends Seeder
         // dd($categoriesId);
         foreach (range(1, 10) as $index) {
             App\Post::create([
-                'title' => $faker->name,
+                'title' => $faker->freeEmail,
             ]);
         }
     }

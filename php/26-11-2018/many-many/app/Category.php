@@ -7,4 +7,9 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     //
+    public $timestamps = false;
+    public function posts()
+    {
+        return $this->belongsToMany('App\Post')->withPivot('post_id', 'category_id');
+    }
 }
